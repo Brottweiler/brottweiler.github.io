@@ -1,1 +1,5 @@
+# GIMP project file
 *.xcf
+
+# vim swap file
+*.swp
