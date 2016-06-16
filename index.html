@@ -43,7 +43,21 @@
   </head>
   <body>
     <div class="center">
-      <div style="margin-top: 150px; font-size:100px; color: #AC4142; font-weight: 300">Brottweiler</div>
+        <h1 align="center" id="message" class="expandUp" style="margin-top: 150px; font-size:100px; color: #AC4142; font-weight: 300"></h1>
+        <script type="text/javascript">
+            var d = new Date();
+            var n = d.getHours();
+            if (n >= 22 || n <= 4){
+                message = "Goodnight";
+            } else if ( n >= 5 && n <= 11 ) {
+                message = "Good Morning";
+            } else if ( n >= 12 && n <= 17 ) {
+                message = "Good Afternoon";
+            } else if ( n >= 18 && n <= 21 ) {
+                message = "Good Evening";
+            }
+            document.getElementById("message").innerHTML = message;
+        </script>
         <a style="padding-right: 35px" href="mailto:brott@oc.tc"><i class="fa fa-paper-plane fa-3x"></i></a>
         <a style="padding-right: 35px" href="https://twitter.com/raggaren"><i class="fa fa-twitter fa-3x"></i></a>
         <a style="padding-right: 35px" href="https://plus.google.com/110854100734931745860"><i class="fa fa-google-plus fa-3x"></i></a>
