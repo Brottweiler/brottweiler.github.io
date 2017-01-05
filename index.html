@@ -1,74 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Brottweiler</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <!-- Roboto Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <head>
+        <title>Brottweiler</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <!-- Roboto Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/c6203cddaa.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-    <style>
-        body {
-            background: url(./coffee-mug-smartphone-desk.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            font-family: 'Roboto', sans-serif;
-        }
-        h1 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 100px;
-            color: #AC4142;
-            font-weight: 300;
-        }
-        .center {
-            margin: 0 auto;
-            text-align: center;
-            margin-top: 150px;
-        }
-    </style>
-  </head>
-  <body>
-    <div class="center">
-        <h1 align="center" id="message" class="expandUp"></h1>
-        <script type="text/javascript">
-            var d = new Date();
-            var n = d.getHours();
-            if (n >= 22 || n <= 4){
-                message = "Goodnight";
-            } else if ( n >= 5 && n <= 11 ) {
-                message = "Good Morning";
-            } else if ( n >= 12 && n <= 17 ) {
-                message = "Good Afternoon";
-            } else if ( n >= 18 && n <= 21 ) {
-                message = "Good Evening";
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/c6203cddaa.js"></script>
+
+        <style>
+            body {
+                background: url(./coffee-mug-smartphone-desk.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                font-family: 'Roboto', sans-serif;
             }
-            document.getElementById("message").innerHTML = message;
-        </script>
-        <a style="padding-right: 35px" href="mailto:brottsie@gmail.com"><i class="fa fa-paper-plane fa-3x"></i></a>
-        <a style="padding-right: 35px" href="https://twitter.com/raggaren"><i class="fa fa-twitter fa-3x"></i></a>
-        <a style="padding-right: 35px" href="https://plus.google.com/110854100734931745860"><i class="fa fa-google-plus fa-3x"></i></a>
-        <a style="padding-right: 35px" href="https://youtube.com/user/whaggare"><i class="fa fa-youtube-play fa-3x"></i></a>
-        <a style="padding-right: 35px" href="https://github.com/Brottweiler"><i class="fa fa-github-alt fa-3x"></i></a>
-        <a href="https://bitbucket.org/Brottweiler"><i class="fa fa-bitbucket fa-3x"></i></a>
-    </div>
-  </body>
+            h1 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 100px;
+                color: #AC4142;
+                font-weight: 300;
+            }
+            .center {
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <h1 align="center" id="message" class="expandUp"></h1>
+            <script type="text/javascript">
+                var d = new Date();
+                var n = d.getHours();
+                if (n >= 22 || n <= 4){
+                    message = "Goodnight";
+                } else if ( n >= 5 && n <= 11 ) {
+                    message = "Good Morning";
+                } else if ( n >= 12 && n <= 17 ) {
+                    message = "Good Afternoon";
+                } else if ( n >= 18 && n <= 21 ) {
+                    message = "Good Evening";
+                }
+                document.getElementById("message").innerHTML = message;
+            </script>
+            <a style="padding-right: 35px" href="mailto:brottsie@gmail.com"><i class="fa fa-paper-plane fa-3x"></i></a>
+            <a style="padding-right: 35px" href="https://twitter.com/raggaren"><i class="fa fa-twitter fa-3x"></i></a>
+            <a style="padding-right: 35px" href="https://plus.google.com/110854100734931745860"><i class="fa fa-google-plus fa-3x"></i></a>
+            <a style="padding-right: 35px" href="https://youtube.com/user/whaggare"><i class="fa fa-youtube-play fa-3x"></i></a>
+            <a style="padding-right: 35px" href="https://github.com/Brottweiler"><i class="fa fa-github-alt fa-3x"></i></a>
+            <a href="https://bitbucket.org/Brottweiler"><i class="fa fa-bitbucket fa-3x"></i></a>
+        </div>
+    </body>
 </html>
