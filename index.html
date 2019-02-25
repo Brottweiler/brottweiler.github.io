@@ -14,19 +14,38 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
         <style>
+            @font-face {
+                font-family: "C64 Pro Mono Local";
+                src: url("C64_Pro_Mono-STYLE.ttf") format("truetype");
+            }
+            @font-face {
+                font-family: "C64 Pro Local";
+                src: url("C64_Pro-STYLE.ttf") format("truetype");
+            }
+            .c64pm {
+                font: normal 24pt/32px "C64 Pro Mono Local", verdana, helvetica, sans-serif;
+                letter-spacing: 0px;
+                padding: 0;
+                margin: 0;
+            }
+            .c64p {
+                font: normal 24pt/32px "C64 Pro Local", verdana, helvetica, sans-serif;
+                letter-spacing: 0px;
+                padding: 0;
+                margin: 0;
+            }
             body {
-                background: url(./coffee-mug-smartphone-desk.jpg) no-repeat center center fixed;
+                background-color: #4e44d8;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
-                font-family: 'Roboto', sans-serif;
             }
-            h1 {
-                font-family: 'Roboto', sans-serif;
-                font-size: 100px;
-                color: #ac4142;
-                font-weight: 300;
+            h1, #message  {
+                color: #b7aaff;
+                padding-bottom: 50px;
+                font-size: 40pt;
+                line-height: 50px;
             }
             .center {
                 margin: 0 auto;
@@ -34,16 +53,19 @@
                 margin-top: 150px;
             }
             a {
-                color: #ac4142;
+                color: #b7aaff;
+            }
+            a, .icon {
+                padding-right: 35px;
             }
             a:hover {
-                color: #9c4142;
+                color: #b7aaff;
             }
         </style>
     </head>
     <body>
         <div class="center">
-            <h1 id="message" class="expandUp"></h1>
+            <h1 id="message" class="expandUp c64p"></h1>
             <script type="text/javascript">
                 var d = new Date();
                 var n = d.getHours();
@@ -58,11 +80,11 @@
                 }
                 document.getElementById("message").innerHTML = message;
             </script>
-            <a style="padding-right: 35px" href="mailto:brottsie@gmail.com"><i class="fas fa-paper-plane fa-3x"></i></a>
-            <a style="padding-right: 35px" href="https://twitter.com/Brottsie"><i class="fab fa-twitter fa-3x"></i></a>
-            <a style="padding-right: 35px" href="https://www.youtube.com/channel/UCx8XjY54NUQaYfRFGd15R0w"><i class="fab fa-youtube fa-3x"></i></a>
-            <a style="padding-right: 35px" href="https://www.twitch.tv/brottweiler"><i class="fab fa-twitch fa-3x"></i></a>
-            <a style="padding-right: 35px" href="https://github.com/Brottweiler"><i class="fab fa-github-alt fa-3x"></i></a>
+            <a class="icon" href="mailto:brottsie@gmail.com"><i class="fas fa-paper-plane fa-3x"></i></a>
+            <a class="icon" href="https://twitter.com/Brottsie"><i class="fab fa-twitter fa-3x"></i></a>
+            <a class="icon" href="https://www.youtube.com/channel/UCx8XjY54NUQaYfRFGd15R0w"><i class="fab fa-youtube fa-3x"></i></a>
+            <a class="icon" href="https://www.twitch.tv/brottweiler"><i class="fab fa-twitch fa-3x"></i></a>
+            <a class="icon" href="https://github.com/Brottweiler"><i class="fab fa-github-alt fa-3x"></i></a>
             <a href="https://gitlab.com/Brottweiler"><i class="fab fa-gitlab fa-3x"></i></a>
         </div>
     </body>
