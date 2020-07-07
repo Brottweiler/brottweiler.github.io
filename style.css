@@ -1,0 +1,32 @@
+body {
+    background-color: #23272A;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1, #message  {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #da7272;
+    padding-bottom: 50px;
+    font-size: 60pt;
+    line-height: 50px;
+}
+.center {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+}
+a {
+    color: #b59999;
+}
+a, .icon {
+    padding-right: 35px;
+}
+a:hover {
+    color: #ffd8d8;
+}
+p {
+    color: #fff;
+}
