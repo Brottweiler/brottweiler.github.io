@@ -1,4 +1,4 @@
-brottweiler.github.io
-=====================
+brottsie.eu
+===========
 
-Website
+Personal website inspired by [even better motherfucking website](https://evenbettermotherfucking.website/).

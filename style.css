@@ -1,32 +1,68 @@
 body {
-    background-color: #23272A;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    margin: 5% auto;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 73%;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 0;
+}
+
 h1, #message  {
-    font-family: Roboto, sans-serif;
     font-weight: bold;
-    color: #da7272;
     padding-bottom: 50px;
     font-size: 60pt;
     line-height: 50px;
 }
+
 .center {
     margin: 0 auto;
     text-align: center;
     margin-top: 150px;
 }
-a {
-    color: #b59999;
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #000;
+        color: #fff;
+    }
+
+    code {
+        background: black;
+    }
+
+    a {
+        border-bottom: 1px solid #c4c4c4;
+        color: #c4c4c4;
+        text-decoration: none;
+    }
+    h1, #message {
+        color: #da7272;
+    }
 }
-a, .icon {
-    padding-right: 35px;
-}
-a:hover {
-    color: #ffd8d8;
-}
-p {
-    color: #fff;
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #fff;
+        color: #000;
+    }
+
+    code {
+        background: white;
+    }
+
+    a {
+        border-bottom: 1px solid #000;
+        color: #000;
+        text-decoration: none;
+    }
+    h1, #message {
+        color: #7289da;
+    }
 }
