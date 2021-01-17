@@ -21,12 +21,6 @@ h1, #message  {
     line-height: 50px;
 }
 
-.center {
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 150px;
-}
-
 @media (prefers-color-scheme: dark) {
     body {
         background: #000;
