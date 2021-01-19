@@ -1,9 +1,7 @@
 body {
-    margin: 5% auto;
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.8;
-    max-width: 73%;
 }
 
 a {
@@ -16,9 +14,7 @@ a:hover {
 
 h1, #message  {
     font-weight: bold;
-    padding-bottom: 50px;
     font-size: 60pt;
-    line-height: 50px;
 }
 
 @media (prefers-color-scheme: dark) {
