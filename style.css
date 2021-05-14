@@ -1,58 +1,58 @@
 body {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.8;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.8;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 a:hover {
-    border-bottom: 0;
+	border-bottom: 0;
 }
 
 h1, #message  {
-    font-weight: bold;
-    font-size: 60pt;
+	font-weight: bold;
+	font-size: 60pt;
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background: #000;
-        color: #fff;
-    }
+	body {
+		background: #000;
+		color: #fff;
+	}
 
-    code {
-        background: black;
-    }
+	code {
+		background: black;
+	}
 
-    a {
-        border-bottom: 1px solid #c4c4c4;
-        color: #c4c4c4;
-        text-decoration: none;
-    }
-    h1, #message {
-        color: #da7272;
-    }
+	a {
+		border-bottom: 1px solid #c4c4c4;
+		color: #c4c4c4;
+		text-decoration: none;
+	}
+	h1, #message {
+		color: #da7272;
+	}
 }
 
 @media (prefers-color-scheme: light) {
-    body {
-        background: #fff;
-        color: #000;
-    }
+	body {
+		background: #fff;
+		color: #000;
+	}
 
-    code {
-        background: white;
-    }
+	code {
+		background: white;
+	}
 
-    a {
-        border-bottom: 1px solid #000;
-        color: #000;
-        text-decoration: none;
-    }
-    h1, #message {
-        color: #7289da;
-    }
+	a {
+		border-bottom: 1px solid #000;
+		color: #000;
+		text-decoration: none;
+	}
+	h1, #message {
+		color: #7289da;
+	}
 }
