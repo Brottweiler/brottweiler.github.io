@@ -2,9 +2,18 @@ body {
 	font-family: Roboto, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.8;
+	background: #fff;
+	color: #000;
+}
+
+code {
+	background: white;
 }
 
 a {
+	text-decoration: none;
+	border-bottom: 1px solid #000;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -15,6 +24,7 @@ a:hover {
 h1, #message  {
 	font-weight: bold;
 	font-size: 60pt;
+	color: #5865f2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,31 +38,11 @@ h1, #message  {
 	}
 
 	a {
-		border-bottom: 1px solid #c4c4c4;
-		color: #c4c4c4;
+		border-bottom: 1px solid #fefefe;
+		color: #fefefe;
 		text-decoration: none;
 	}
 	h1, #message {
-		color: #da7272;
-	}
-}
-
-@media (prefers-color-scheme: light) {
-	body {
-		background: #fff;
-		color: #000;
-	}
-
-	code {
-		background: white;
-	}
-
-	a {
-		border-bottom: 1px solid #000;
-		color: #000;
-		text-decoration: none;
-	}
-	h1, #message {
-		color: #7289da;
+		color: #ed4245;
 	}
 }
