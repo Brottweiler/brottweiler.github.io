@@ -1,4 +1,6 @@
 brottsie.eu
 ===========
 
-Personal website inspired by [mother fucking website](http://motherfuckingwebsite.com/).
+Simple and minimal website inspired by [mother fucking website](http://motherfuckingwebsite.com/).
+
+This website supports dark mode. The text and background colours are swapped, and link colours are tweaked to look better on a dark background.
