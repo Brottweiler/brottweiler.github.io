@@ -6,3 +6,6 @@
 
 # img directory
 img/
+
+#nano backup files
+*~

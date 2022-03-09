@@ -1,0 +1,135 @@
+ ____   ___   ___  __  __   ___ ___            _ _   _
+|  _ \ / _ \ / _ \|  \/  | |_ _|_ _| __      _(_) |_| |__
+| | | | | | | | | | |\/| |  | | | |  \ \ /\ / / | __| '_ \
+| |_| | |_| | |_| | |  | |  | | | |   \ V  V /| | |_| | | |
+|____/ \___/ \___/|_|  |_| |___|___|   \_/\_/ |_|\__|_| |_|
+
+ ____            _
+|  _ \ _ __ ___ | |_ ___  _ __
+| |_) | '__/ _ \| __/ _ \| '_ \
+|  __/| | | (_) | || (_) | | | |
+|_|   |_|  \___/ \__\___/|_| |_|
+
+Some time ago, Bethesda updated Doom II on Steam with some sort of new
+engine so it can be played on newer hardware. This version works fine
+with Proton, but with Proton 7.0-1, it crashes on quit. This might not
+matter, but it takes some time for the game to exit and there is disk
+activity. Checking the journal, there is a _core dump_.
+
+Proton 6.3-8 does not have this problem, neither does Proton
+Experimental, so the issue seems fixed.
+
+Mar 09 21:09:49 neptune systemd-coredump[3651]: Process 3511 (DOOM II.exe) of user 1000 dumped core.
+                                                
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/opengl32.dll.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/bin/wine64 without build-id.
+                                                Module /home/brott/.local/share/Steam/linux64/steamclient.so with build-id 57687f75dbb5296c868b84011aa2544bdefcbf3b
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/lsteamclient.dll.so without build-id.
+                                                Module /home/brott/.local/share/Steam/ubuntu12_64/libvpx.so.6 with build-id 9ca34e19a7034a1b81f4b07ecbe188e49ec97237
+                                                Module /home/brott/.local/share/Steam/ubuntu12_64/libavutil.so.56 with build-id e5c24840589e2c82bb992315fc906767cbe886fd
+                                                Module /home/brott/.local/share/Steam/ubuntu12_64/libavcodec.so.58 with build-id 6d46aac045fc7a06ba6428fe1ff4d5ea16076261
+                                                Module /home/brott/.local/share/Steam/ubuntu12_64/libavformat.so.58 with build-id d45a33318634d8c838d7efb14ac2eb5a2240211d
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstdeinterlace.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstwavparse.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstvideofilter.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/libgstrtp-1.0.so.0.1805.0 without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstisomp4.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgsttypefindfunctions.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstavi.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstvideoconvert.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstcoreelements.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/libdav1d.so.5.1.1 without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstvideobox.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstdebug.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstvideoscale.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstaudioparsers.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstcoretracers.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstrsdav1d.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libprotonmediaconverter.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstogg.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstmatroska.so without build-id.
+                                                Module /home/brott/.local/share/Steam/ubuntu12_64/libavfilter.so.7 with build-id b85dbf9ecf2f605c0a4e9d4cf0b7acee76a816ef
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstvorbis.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstplayback.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/libgstpbutils-1.0.so.0.1805.0 without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/libgstreamer-1.0.so.0.1805.0 without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstmpg123.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstaudioconvert.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgsttheora.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstadder.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/liborc-0.4.so.0.32.0 without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/libgstbase-1.0.so.0.1805.0 without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstnavigationtest.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/libgsttag-1.0.so.0.1805.0 without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/libgstvideo-1.0.so.0.1805.0 without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/libgstriff-1.0.so.0.1805.0 without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstopus.so without build-id.
+                                                Module /run/host/usr/lib/libva.so.2.1300.0 with build-id 7636f0d16fc8cb315f9274e487bd226d1236891e
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstaudioresample.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/libgstapp-1.0.so.0.1805.0 without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/libgstaudio-1.0.so.0.1805.0 without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstpbtypes.so without build-id.
+                                                Module /run/host/usr/lib/libvdpau.so.1.0.0 with build-id fccd021ff13c37ebf7144d184a3250624e086f52
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstapp.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstlibav.so without build-id.
+                                                Module /run/host/usr/lib/libnsl.so.1 with build-id d746899444f26da5db7c1da61be3ffab757fbf4a
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/avicap32.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/libopenxr_loader.so.1.0.20 without build-id.
+                                                Module /run/host/usr/lib/libnvidia-glvkspirv.so.510.54 with build-id a8f45cf876a8c8b2e10f91f89aca1d57febb3526
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/winegstreamer.so without build-id.
+                                                Module /run/host/usr/lib/libnvidia-glcore.so.510.54 with build-id 7576be7cecae485aa6f8120c1f040126301938e7
+                                                Module /run/host/usr/lib/libva-x11.so.2.1300.0 with build-id 61e734cd9bd8265d76a73698e94b891539801ec1
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libgstautodetect.so without build-id.
+                                                Module /run/host/usr/lib/liblzma.so.5.2.5 with build-id 8b615460aa230708c5183f16bede67aa0437d95e
+                                                Module /run/host/usr/lib/libnvidia-tls.so.510.54 with build-id 1f7f903b99300700f138d986877210c4e12316f7
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/wineopenxr.dll.so without build-id.
+                                                Module /run/host/usr/lib/libnvidia-glsi.so.510.54 with build-id 6e562292b666f11bb7f2759532ae2c7efcd0d8b5
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/winepulse.so without build-id.
+                                                Module /run/host/usr/lib/libGLX_nvidia.so.510.54 with build-id a549c126fae9351ecf6621544582df2d25b27f42
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/kerberos.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/secur32.so without build-id.
+                                                Module /run/host/usr/lib/libvulkan.so.1.2.203 with build-id 40c7a455d37803dbd362377df831a77142acb66b
+                                                Module /run/host/usr/lib/libva-drm.so.2.1300.0 with build-id 7a02a127b38763e2ec9a2503f0ae4c3d57c20327
+                                                Module /run/host/usr/lib/libX11-xcb.so.1.0.0 with build-id 0db4f94d8ae31b8dc9a83f825a9171656f1e532c
+                                                Module /home/brott/.local/share/Steam/ubuntu12_64/libVkLayer_steam_fossilize.so with build-id 690c85b6d568f9feecf9d8aa368b2a57316b3d8a
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/winspool.so without build-id.
+                                                Module /run/host/usr/lib/libdrm.so.2.4.0 with build-id 00816f0a71c7e4e388c10db6245dbb9c031732a9
+                                                Module /home/brott/.local/share/Steam/ubuntu12_64/steamoverlayvulkanlayer.so with build-id 15ba63c9616ee978e3e04e78455ee9700bdef4b7
+                                                Module /run/host/usr/lib/libxcb-glx.so.0.0.0 with build-id 8ad115382ad874165523dc5b4488c99d73bbc3c4
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/winevulkan.so without build-id.
+                                                Module /run/host/usr/lib/libXfixes.so.3.1.0 with build-id 0a05c7e8714522bfbdd7c0027c3e2a94965664b0
+                                                Module /run/host/usr/lib/libXxf86vm.so.1.0.0 with build-id 01e8243d0c6c971fa9e743e6e53d606b1cb76f6e
+                                                Module /run/host/usr/lib/libXext.so.6.4.0 with build-id d70f24beb4fad748d6becffdcc13e51be0a2ebfa
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/winex11.drv.so without build-id.
+                                                Module /run/host/usr/lib/libunistring.so.2.1.0 with build-id 015ac6d6bcb60b7d8bea31a80d1941b06e8636ab
+                                                Module /run/host/usr/lib/libidn2.so.0.3.7 with build-id 1ce2b50ad9f9821c2c629b521cf5a3c99593d332
+                                                Module /run/host/usr/lib/libexpat.so.1.8.7 with build-id a05c64fe82308a309e7653685c94ce71735f8a1a
+                                                Module /run/host/usr/lib/libz.so.1.2.11 with build-id 0c1459c56513efd5d53eb3868290e9afee6a6a26
+                                                Module /run/host/usr/lib/libresolv.so.2 with build-id 46ffdf3d477a170314060c26927470d7399bc900
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/dnsapi.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/crypt32.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/bcrypt.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/ws2_32.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/win32u.so without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/libwine.so.1.0 without build-id.
+                                                Module /home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/ntdll.so without build-id.
+                                                Module /run/host/usr/lib/libXdmcp.so.6.0.0 with build-id 8ca0792d23c8b8b4c0864297512349292bea5955
+                                                Module /run/host/usr/lib/libXau.so.6.0.0 with build-id 1c67764663e07bec24d8951e5fd93f4d165979ff
+                                                Module /run/host/usr/lib/libxcb.so.1.1.0 with build-id 0d1ef11740a5daad2ee331e812a51aa6574af222
+                                                Module /run/host/usr/lib/libX11.so.6.4.0 with build-id 5ba5798d193c0065014b8c6252a0678671c8d478
+                                                Module /run/host/usr/lib/libGLX.so.0.0.0 with build-id 2a08836c6e6126ce9ff4496b6aacaf29ae9b4e7b
+                                                Module /run/host/usr/lib/libGLdispatch.so.0.0.0 with build-id 501765b3a78d668860fa54229b18107473aeda4c
+                                                Module /run/host/usr/lib/libm.so.6 with build-id 596b63a006a4386dcab30912d2b54a7a61827b07
+                                                Module /run/host/usr/lib/libGL.so.1.7.0 with build-id 912ac4f37a9fa2d5abcf7a9088c9983cfe46f12a
+                                                Module /run/host/usr/lib/librt.so.1 with build-id 4761858b348db8303e872e515aa8d56c046c921c
+                                                Module /run/host/usr/lib/libstdc++.so.6.0.29 with build-id 88ad4eff81a00c684abfe0f863e87434123d8943
+                                                Module /run/host/usr/lib/libc.so.6 with build-id 85766e9d8458b16e9c7ce6e07c712c02b8471dbc
+                                                Module /run/host/usr/lib/libdl.so.2 with build-id bb9bd2657bfba9f60bd34d2050cc63a7eb024bc4
+                                                Module /run/host/usr/lib/libpthread.so.0 with build-id 7fa8b52fae071a370ba4ca32bf9490a30aff31c4
+                                                Module /home/brott/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so with build-id d660d4524853eac3719e252fe90f586938510093
+                                                Module /run/host/usr/lib/ld-linux-x86-64.so.2 with build-id c09c6f50f6bcec73c64a0b4be77eadb8f7202410
+                                                Module linux-vdso.so.1 with build-id 2f0b6fabb476bcc334f291e50364511afda88a31
+                                                Stack trace of thread 3573:
+                                                #0  0x00007f45355c5716 n/a (/home/brott/.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/x86_64-unix/ntdll.so + 0x49716)
+                                                #1  0x0000000000000000 n/a (n/a + 0x0)
+                                                ELF object binary architecture: AMD x86-64
