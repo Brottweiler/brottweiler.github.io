@@ -4,16 +4,16 @@
 |  _  | (_) \ V  V /  | || (_) |  / ___ \ |_| |  _ <
 |_| |_|\___/ \_/\_/    \__\___/  /_/   \_\___/|_| \_\
 
-In the early days, I used Yaourt[0] like anybody else. It was very
+In the early days, I used Yaourt[1] like anybody else. It was very
 convenient, and for some reason I stopped using it. Today, no one should
-use it, but people use other helpers[1] very similar to it.
+use it, but people use other helpers[2] very similar to it.
 
-Most helpers, at least if they are wrappers for pacman[2], encourages
+Most helpers, at least if they are wrappers for pacman[3], encourages
 bad practices. I have used some helpers mainly for searching the AUR
 from the command line, but also downloading and updating.
 Nowadays, I manually download/clone the AUR repo, build and install
-using pacman. I only used cower[3] for checking updates until I switched
-to perl-checkupdates-aur[4], until I noticed it stopped working for me.
+using pacman. I only used cower[4] for checking updates until I switched
+to perl-checkupdates-aur[5], until I noticed it stopped working for me.
 
 Trying to find a solution, I realised that my old AUR account didn't
 have the 'Notify of package updates' option enabled. This option is
@@ -29,7 +29,7 @@ If you want to avoid AUR helpers, here are my steps.
 
 Now you should get notifications via email if a package updates, and you
 can `git pull` to update.
-If you _really_ need an AUR helper.. look into aurutils[5].
+If you _really_ need an AUR helper.. look into aurutils[6].
 
 If you want to simplify your git cloning, add this to your `.gitconfig`.
 
@@ -42,9 +42,9 @@ Now you can clone the package using `git clone aur:<pkg name>`.
 
 ---
 
-	- [0] https://archlinux.fr/yaourt-en
-	- [1] https://wiki.archlinux.org/title/AUR_helpers
-	- [2] https://archlinux.org/pacman/
-	- [3] https://archive.ph/6437f
-	- [4] https://aur.archlinux.org/packages/perl-checkupdates-aur
-	- [5] https://aur.archlinux.org/packages/aurutils
+	- [1] https://archlinux.fr/yaourt-en
+	- [2] https://wiki.archlinux.org/title/AUR_helpers
+	- [3] https://archlinux.org/pacman/
+	- [4] https://archive.ph/6437f
+	- [5] https://aur.archlinux.org/packages/perl-checkupdates-aur
+	- [6] https://aur.archlinux.org/packages/aurutils
