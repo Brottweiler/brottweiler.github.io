@@ -1,0 +1,39 @@
+ _   _                 _             _   _   _ ____
+| | | | _____      __ | |_ ___      / \ | | | |  _ \
+| |_| |/ _ \ \ /\ / / | __/ _ \    / _ \| | | | |_) |
+|  _  | (_) \ V  V /  | || (_) |  / ___ \ |_| |  _ <
+|_| |_|\___/ \_/\_/    \__\___/  /_/   \_\___/|_| \_\
+
+In the early days, I used Yaourt[0] like anybody else. It was very
+convenient, and for some reason I stopped using it. Today, no one should
+use it, but people use other helpers[1] very similar to it.
+
+Most helpers, at least if they are wrappers for pacman[2], encourages
+bad practices. I have used some helpers mainly for searching the AUR
+from the command line, but also downloading and updating.
+Nowadays, I manually download/clone the AUR repo, build and install
+using pacman. I only used cower[3] for checking updates until I switched
+to perl-checkupdates-aur[4], until I noticed it stopped working for me.
+
+Trying to find a solution, I realised that my old AUR account didn't
+have the 'Notify of package updates' option enabled. This option is
+enabled for new accounts, but my account is old. Now I get updates via
+email, and I can `git pull` to update and rebuild the package.
+
+If you want to avoid AUR helpers, here are my steps.
+	1. Create a folder where you can store your packages and enter it.
+	2. Clone the package using git.
+	3. Read the PKGBUILD (and other files) and build the package.
+	4. Install the package (or use -i with makepkg).
+	5. Create an AUR account and enable notifications.
+
+Now you should get notifications via email if a package updates, and you
+can `git pull` to update.
+If you _really_ need an AUR helper.. look into aurutils[5].
+
+	- [0] https://archlinux.fr/yaourt-en
+	- [1] https://wiki.archlinux.org/title/AUR_helpers
+	- [2] https://archlinux.org/pacman/
+	- [3] https://archive.ph/6437f
+	- [4] https://aur.archlinux.org/packages/perl-checkupdates-aur
+	- [5] https://aur.archlinux.org/packages/aurutils
