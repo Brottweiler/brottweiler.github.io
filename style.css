@@ -12,4 +12,7 @@ a:hover {
 	a:visited {
 		color: MediumPurple;
 	}
+	button:disabled {
+		color: Silver;
+	}
 }
