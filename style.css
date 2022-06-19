@@ -1,4 +1,4 @@
-a:hover {
+sup a {
 	text-decoration: none;
 }
 @media (prefers-color-scheme: dark) {
