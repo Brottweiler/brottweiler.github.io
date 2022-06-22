@@ -2,10 +2,14 @@ sup a {
 	text-decoration: none;
 }
 kbd {
-	border: 1px solid Silver;
-	box-shadow: 0.1em 0.1em 0.2em;
 	background-color: WhiteSmoke;
-	padding: 0.1em 0.3em;
+	border-radius: 2px;
+	border: 1px solid Silver;
+	box-shadow: 1px 1px 2px;
+	display: inline-block;
+	line-height: 1;
+	padding: 2px 4px;
+	white-space: nowrap;
 }
 @media (prefers-color-scheme: dark) {
 	body {
@@ -22,7 +26,9 @@ kbd {
 		color: Silver;
 	}
 	kbd {
-		color: Black;
-		box-shadow: 0.1em 0.1em 0.2em White;
+		background-color: DarkSlateGray;
+		border: 1px solid SlateGray;
+		box-shadow: 1px 1px 2px Silver;
+		color: White;
 	}
 }
