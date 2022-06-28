@@ -11,6 +11,11 @@ kbd {
 	padding: 2px 4px;
 	white-space: nowrap;
 }
+code {
+    background-color: Lavender;
+    border-radius: 3px;
+    padding: 0 3px;
+}
 @media (prefers-color-scheme: dark) {
 	body {
 		background: Black;
@@ -30,5 +35,8 @@ kbd {
 		border: 1px solid SlateGray;
 		box-shadow: 1px 1px 2px White;
 		color: White;
+	}
+	code {
+		color: Black;
 	}
 }
