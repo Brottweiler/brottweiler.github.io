@@ -28,7 +28,7 @@ code {
 		color: MediumPurple;
 	}
 	button:disabled {
-		color: Silver;
+		color: DarkGray;
 	}
 	kbd {
 		box-shadow: 1px 1px 2px White;
