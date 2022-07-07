@@ -16,6 +16,17 @@ code {
 	border-radius: 3px;
 	padding: 0 3px;
 }
+table,
+td {
+	border: 1px solid Black;
+}
+
+thead,
+tfoot {
+	background-color: Black;
+	color: White;
+}
+
 @media (prefers-color-scheme: dark) {
 	body {
 		background: Black;
@@ -35,6 +46,16 @@ code {
 		color: Black;
 	}
 	code {
+		color: Black;
+	}
+	table,
+	td {
+		border: 1px solid DarkGray;
+	}
+
+	thead,
+	tfoot {
+		background-color: White;
 		color: Black;
 	}
 }
