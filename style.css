@@ -20,11 +20,22 @@ table,
 td {
 	border: 1px solid Black;
 }
-
 thead,
 tfoot {
 	background-color: Black;
 	color: White;
+}
+blockquote {
+	margin: 0;
+}
+blockquote p {
+	font-style: italic;
+}
+blockquote p::before {
+	content: '\201C';
+}
+blockquote p::after {
+	content: '\201D';
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,7 +63,6 @@ tfoot {
 	td {
 		border: 1px solid DarkGray;
 	}
-
 	thead,
 	tfoot {
 		background-color: White;
