@@ -12,9 +12,9 @@ kbd {
 	white-space: nowrap;
 }
 code {
-    background-color: Lavender;
-    border-radius: 3px;
-    padding: 0 3px;
+	background-color: Lavender;
+	border-radius: 3px;
+	padding: 0 3px;
 }
 @media (prefers-color-scheme: dark) {
 	body {
