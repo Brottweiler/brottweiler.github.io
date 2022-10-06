@@ -2,8 +2,7 @@ main {
 	max-width: 70ch;
 }
 pre {
-	overflow: scroll;
-	max-width: 70ch;
+	overflow-x: scroll;
 }
 sup a {
 	text-decoration: none;
