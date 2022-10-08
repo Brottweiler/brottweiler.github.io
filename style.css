@@ -1,5 +1,6 @@
 main {
 	max-width: 70ch;
+	margin: auto;
 }
 pre {
 	overflow-x: scroll;
