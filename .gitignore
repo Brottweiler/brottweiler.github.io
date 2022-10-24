@@ -1,8 +1,0 @@
-# GIMP project file
-*.xcf
-
-# vim swap file
-*.swp
-
-#nano backup files
-*~
