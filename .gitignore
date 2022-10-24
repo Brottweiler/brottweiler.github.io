@@ -4,8 +4,5 @@
 # vim swap file
 *.swp
 
-# img directory
-img/
-
 #nano backup files
 *~
