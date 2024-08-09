@@ -45,7 +45,7 @@ img {
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background: Black;
+		background-color: Black;
 		color: White;
 	}
 	a {
