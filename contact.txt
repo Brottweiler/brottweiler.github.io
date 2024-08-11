@@ -1,0 +1,16 @@
+################
+# CONTACT INFO #
+################
+
+The best way to reach me is via email. I also hang around IRC, so if you want
+to chat, please email me and we can meet on IRC.
+
+For personal inquiries, please email me at <me@brottsie.eu>. If your issue is
+regarding Project Enyo <projectenyo.eu>, please email me at
+<brott@projectenyo.eu>. If you want to reach all staff, not just me, there is
+the email address <info@projectenyo.eu> for that.
+
+If you come from the oc.tc Minecraft server, then you should email me at
+<brott@oc.tc> to reach me.
+
+Please use the correct address! :-)
