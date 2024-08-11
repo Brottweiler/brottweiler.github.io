@@ -1,6 +1,8 @@
-################
-# CONTACT INFO #
-################
++-----------------------------------------------------------------------------+
+|                                                                             |
+|                   CONTACT INFORMATION. OR HOW TO REACH ME                   |
+|                                                                             |
++-----------------------------------------------------------------------------+
 
 The best way to reach me is via email. I also hang around IRC, so if you want
 to chat, please email me and we can meet on IRC.
