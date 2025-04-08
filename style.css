@@ -42,6 +42,58 @@ blockquote p::after {
 img {
 	max-width: 100%
 }
+span.nix:before {
+	content: url(img/icons/tux.png) / "Linux";
+	margin: 0 0.2em;
+}
+span.se:before {
+	content: url(img/icons/se.png) / "Sweden";
+	margin: 0 0.2em;
+}
+span.irc:before {
+	content: url(img/icons/application_xp_terminal.png) / "Terminal Emulator";
+	margin: 0 0.2em;
+}
+a.www:before {
+	content: url(img/icons/world.png) / "WWW";
+	margin: 0 0.2em;
+}
+a.email:before {
+	content: url(img/icons/email.png) / "E-mail";
+	margin: 0 0.2em;
+}
+a.game:before {
+	content: url(img/icons/controller.png) / "Game";
+	margin: 0 0.2em;
+}
+a.pack:before {
+	content: url(img/icons/package.png) / "Package";
+	margin: 0 0.2em;
+}
+a.feed:before {
+	content: url(img/icons/feed.png) / "News Feed";
+	margin: 0 0.2em;
+}
+a.img:before {
+	content: url(img/icons/image.png) / "Image";
+	margin: 0 0.2em;
+}
+a.se:before {
+	content: url(img/icons/se.png) / "Sweden";
+	margin: 0 0.2em;
+}
+a.de:before {
+	content: url(img/icons/de.png) / "Germany";
+	margin: 0 0.2em;
+}
+a.ch:before {
+	content: url(img/icons/ch.png) / "Switzerland";
+	margin: 0 0.2em;
+}
+a.fr:before {
+	content: url(img/icons/fr.png) / "France";
+	margin: 0 0.2em;
+}
 
 @media (prefers-color-scheme: dark) {
 	body {
