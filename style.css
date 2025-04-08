@@ -46,10 +46,6 @@ span.nix:before {
 	content: url(img/icons/tux.png) / "Linux";
 	margin: 0 0.2em;
 }
-span.se:before {
-	content: url(img/icons/se.png) / "Sweden";
-	margin: 0 0.2em;
-}
 span.irc:before {
 	content: url(img/icons/application_xp_terminal.png) / "Terminal Emulator";
 	margin: 0 0.2em;
@@ -78,7 +74,7 @@ a.img:before {
 	content: url(img/icons/image.png) / "Image";
 	margin: 0 0.2em;
 }
-a.se:before {
+a.se:before,span.se:before {
 	content: url(img/icons/se.png) / "Sweden";
 	margin: 0 0.2em;
 }
