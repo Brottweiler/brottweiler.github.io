@@ -1,11 +1,8 @@
-+-----------------------------------------------------------------------------+
-|                                                                             |
-|                  CONTACT INFORMATION.  OR HOW TO REACH ME.                  |
-|                                                                             |
-+-----------------------------------------------------------------------------+
+CONTACT INFORMATION.  OR HOW TO REACH ME.
 
 The best way to reach me is via email.  I also hang around IRC, so if you want
-to chat, please email me and we can meet on IRC.
+to chat, please email me and we can meet on IRC.  Or just send me a message
+if you see me on a server.
 
 There are multiple email addresses that you can use to contact me depending
 on if your inquiry is related to Project Enyo, oc.tc or not.
@@ -13,6 +10,6 @@ on if your inquiry is related to Project Enyo, oc.tc or not.
   Personal: <me@brottsie.eu>
   Project Enyo Personal: <brott@projectenyo.eu>
   Project Enyo General: <info@projectenyo.eu>
-  OC.TC: <brott@oc.tc>
+  oc.tc: <brott@oc.tc>
 
 Please use the correct address! :-)
